@@ -29,10 +29,10 @@ public class ex04 {
 			System.out.println("Idade: ");
 			idade = leia.nextInt();			
 			
-			do{
+			//do{
 				System.out.println("Sexo [M/F]: ");
 				sexo = leia.next();			
-			}while(sexo == "M");
+			//}while(!sexo.equals("m") || !sexo.equals("f"));
 			
 			System.out.println("Salário: ");
 			salario = leia.nextFloat();
@@ -42,7 +42,7 @@ public class ex04 {
 			mediaIdade += idade;
 			//soma mediaSalario e mediaIdade
 			
-			if(sexo == "M") {
+			if(sexo.equals("m")) {
 				if(maiorSalarioM < salario) {
 					maiorSalarioM = salario;
 				}
