@@ -29,10 +29,10 @@ public class ex04 {
 			System.out.println("Idade: ");
 			idade = leia.nextInt();			
 			
-			//do{
+			do{
 				System.out.println("Sexo [M/F]: ");
 				sexo = leia.next();			
-			//}while(!sexo.equals("m") || !sexo.equals("f"));
+			}while(!sexo.equals("m") && !sexo.equals("f"));
 			
 			System.out.println("Salário: ");
 			salario = leia.nextFloat();
